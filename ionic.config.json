@@ -1,0 +1,8 @@
+{
+  "name": "Foundation Sure",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular",
+  "id": "cac7dcd2"
+}
