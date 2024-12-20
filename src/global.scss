@@ -35,3 +35,180 @@
 /* @import "@ionic/angular/css/palettes/dark.always.css"; */
 /* @import "@ionic/angular/css/palettes/dark.class.css"; */
 @import "@ionic/angular/css/palettes/dark.system.css";
+
+/* ----------------------------------------------------------------------------
+ * Foundation-Sure Custom Theme Styles
+ * ----------------------------------------------------------------------------
+ */
+
+/* Global Settings */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f4f4f9; /* Light background for a clean look */
+  color: #333; /* Dark text for readability */
+  margin: 0;
+  padding: 0;
+}
+
+/* Title Styles */
+.app-title {
+  font-weight: 700;
+  font-size: 1.5rem;
+  text-align: center;
+  color: #007bff; /* Catchy blue color for the title */
+}
+
+/* Headings for Each Page */
+.page-heading {
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin: 20px 0;
+  text-align: center;
+  color: #333;
+}
+
+/* Buttons */
+ion-button {
+  margin-top: 15px;
+  --background: #007bff; /* Primary blue color */
+  --color: #fff;
+  --border-radius: 10px;
+  padding: 12px;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+ion-button:hover {
+  --background: #0056b3; /* Darker blue on hover */
+}
+
+/* Input Fields */
+input[type="email"],
+input[type="password"],
+input[type="file"] {
+  width: 90%;
+  padding: 10px;
+  margin: 10px 0 15px 0; /* Added spacing for separation */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+/* Labels */
+label {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 5px;
+  display: inline-block; /* Ensures proper alignment */
+}
+
+/* Modal Custom Styles */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  opacity: 0;
+  transition: opacity 0.3s ease; /* Smooth transition for modal appearance */
+}
+
+.modal.show {
+  opacity: 1;
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 400px;
+  border-radius: 8px;
+  text-align: center;
+  animation: slide-down 0.5s ease; /* Sliding animation */
+}
+
+@keyframes slide-down {
+  from {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Close Button in Modal */
+.close {
+  float: right;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+/* Error and Success Messages */
+.error {
+  color: red;
+  margin-top: 10px;
+}
+
+.success {
+  color: green;
+  margin-top: 10px;
+}
+
+/* Hyperlinks */
+.link {
+  color: blue;
+  cursor: pointer;
+  text-decoration: underline;
+  margin-top: 10px;
+}
+
+/* Lists */
+ion-list-header {
+  font-weight: bold;
+  margin-top: 10px;
+  color: #007bff; /* Same blue color for consistency */
+}
+
+/* Items in Lists */
+ion-item {
+  --background: #fff; /* White background for items */
+  --border-radius: 8px;
+  margin: 10px 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow for elevation */
+}
+
+/* Content Padding */
+ion-content {
+  padding: 15px;
+}
+
+/* Navigation Links */
+nav a {
+  color: #007bff;
+  text-decoration: none;
+  font-size: 1rem;
+  margin: 10px 0;
+  display: inline-block;
+}
+
+nav a:hover {
+  color: #0056b3;
+}
+
+/* Footer Styling */
+.footer {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #666;
+  margin-top: 20px;
+  padding: 10px 0;
+  border-top: 1px solid #ccc;
+}
