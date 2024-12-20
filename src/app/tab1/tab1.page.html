@@ -5,9 +5,24 @@
 </ion-header>
 
 <ion-content>
-  <ion-button expand="full" (click)="takePicture()">Take a Picture</ion-button>
-  <ion-button expand="full" (click)="getLocation()">Get Location</ion-button>
-  <ion-button expand="full" (click)="getDeviceInfo()">Get Device Info</ion-button>
-  <ion-button expand="full" (click)="checkNetwork()">Check Network</ion-button>
-  <ion-button expand="full" (click)="openBrowser()">Open Browser</ion-button>
+  <!-- File Upload Section -->
+  <ion-item>
+    <ion-label>Upload a File:</ion-label>
+    <input type="file" (change)="onFileChange($event)" />
+  </ion-item>
+
+  <!-- Navigation Buttons -->
+  <ion-list>
+    <ion-list-header>
+      <ion-label>Navigate to Other Tabs</ion-label>
+    </ion-list-header>
+
+    <ion-item routerLink="/tab2">
+      <ion-label>Go to Tab 2</ion-label>
+    </ion-item>
+
+    <ion-item routerLink="/tab3">
+      <ion-label>Go to Tab 3</ion-label>
+    </ion-item>
+  </ion-list>
 </ion-content>

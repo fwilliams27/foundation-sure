@@ -1,17 +1,11 @@
-<ion-header [translucent]="true">
+<ion-header>
   <ion-toolbar>
-    <ion-title>
-      Tab 3
-    </ion-title>
+    <ion-title>Tab 3</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 3</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <app-explore-container name="Tab 3 page"></app-explore-container>
+<ion-content>
+  <p>Welcome to Tab 3</p>
+  <ion-button expand="full" routerLink="/tab1">Back to Tab 1</ion-button>
+  <ion-button expand="full" routerLink="/tab2">Go to Tab 2</ion-button>
 </ion-content>
