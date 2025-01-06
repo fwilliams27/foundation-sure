@@ -1,0 +1,8 @@
+<div class="photo-editor">
+    <input type="file" (change)="onFileSelected($event)" accept="image/*" />
+    <div class="editor-container">
+      <canvas #canvas width="800" height="600"></canvas>
+    </div>
+    <button (click)="saveEditedPhoto()">Save Photo</button>
+  </div>
+  

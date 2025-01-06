@@ -54,7 +54,8 @@
                   "with": "src/environments/environment.prod.ts"
                 }
               ],
-              "outputHashing": "all"
+              "outputHashing": "all",
+              "progress": true 
             },
             "development": {
               "buildOptimizer": false,
@@ -62,10 +63,11 @@
               "vendorChunk": true,
               "extractLicenses": false,
               "sourceMap": true,
-              "namedChunks": true
+              "namedChunks": true,
+              "progress": true 
             },
             "ci": {
-              "progress": false
+              "progress": true 
             }
           },
           "defaultConfiguration": "production"

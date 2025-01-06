@@ -1,0 +1,7 @@
+<div class="location-container">
+    <h2>Location Information</h2>
+    <p *ngIf="location">Latitude: {{ location.latitude }}, Longitude: {{ location.longitude }}</p>
+    <p *ngIf="error">{{ error }}</p>
+    <button (click)="getLocation()">Get Current Location</button>
+  </div>
+  

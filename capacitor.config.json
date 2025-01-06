@@ -1,0 +1,17 @@
+{
+	"appId": "io.ionic.starter",
+	"appName": "Foundation Sure",
+	"webDir": "www",
+	"bundledWebRuntime": false, 
+	"packageClassList": [
+		"AppPlugin",
+		"CAPBrowserPlugin",
+		"CAPCameraPlugin",
+		"DevicePlugin",
+		"GeolocationPlugin",
+		"HapticsPlugin",
+		"KeyboardPlugin",
+		"CAPNetworkPlugin",
+		"StatusBarPlugin"
+	]
+}
