@@ -5,12 +5,12 @@
 	"packageClassList": [
 		"AppPlugin",
 		"CAPBrowserPlugin",
-		"CAPCameraPlugin",
+		"CameraPlugin",
 		"DevicePlugin",
 		"GeolocationPlugin",
 		"HapticsPlugin",
 		"KeyboardPlugin",
-		"CAPNetworkPlugin",
+		"NetworkPlugin",
 		"StatusBarPlugin"
 	]
 }
